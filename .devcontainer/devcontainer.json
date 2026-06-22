@@ -1,0 +1,13 @@
+{
+  "name": "Node.js & TypeScript",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:4-24-trixie",
+  "forwardPorts": [
+    8081
+  ],
+  "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+  "runArgs": [
+    "-p=8081:8081",
+    "--env-file",
+    "./.devcontainer/.env"
+  ]
+}
